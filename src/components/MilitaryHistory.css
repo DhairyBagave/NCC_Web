@@ -1,0 +1,32 @@
+.military-history {
+    padding: 50px 20px;
+    background-color: #fff;
+  }
+  
+  .military-history h2 {
+    color: #cc0000;
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
+  
+  .history-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .history-list li {
+    margin-bottom: 20px;
+  }
+  
+  .history-list li h3 {
+    margin: 0;
+    font-size: 22px;
+    color: #333;
+  }
+  
+  .history-list li p {
+    margin: 5px 0 0;
+    color: #666;
+    line-height: 1.6;
+  }
+  

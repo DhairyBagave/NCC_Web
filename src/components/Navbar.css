@@ -1,0 +1,133 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #cc0000;
+    position: relative;
+}
+
+.navbar-logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo-image {
+    height: 60px; /* Increase the logo size slightly */
+    margin-right: 15px; /* Increase spacing between logos */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar-logo-image:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect */
+}
+
+
+.navbar-title {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    flex: 1;
+    text-align: center;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-links li {
+    margin-left: 20px;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: #ddd;
+}
+
+.mobile-menu-icon {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.mobile-menu-icon:hover {
+    background-color: #a30000;
+}
+
+@media (max-width: 768px) {
+    .navbar-logo-container {
+        display: none; /* Hide logos on mobile */
+    }
+
+    .navbar-title {
+        font-size: 20px;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+
+    .navbar-links-mobile {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #cc0000;
+        padding: 10px 0;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        z-index: 10;
+        border-radius: 0 0 8px 8px;
+    }
+
+    .navbar-links-mobile li {
+        margin: 15px 0;
+        width: 100%;
+        text-align: center;
+        transition: background-color 0.3s ease;
+    }
+
+    .navbar-links-mobile li:hover {
+        background-color: #a30000;
+    }
+
+    .navbar-links-mobile a {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .navbar-links-mobile a:hover {
+        color: #ffd700;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        position: relative;
+        z-index: 20;
+    }
+}
+
+  
+  
+  
+  

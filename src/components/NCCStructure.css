@@ -1,0 +1,51 @@
+.ncc-structure {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 1200px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .ncc-structure h2, .ncc-structure h3 {
+    color: #cc0000;
+    text-align: center;
+  }
+  
+  .ncc-table-container {
+    margin-top: 30px;
+  }
+  
+  .ncc-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+  }
+  
+  .ncc-table th, .ncc-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    color: #333;
+  }
+  
+  .ncc-table th {
+    background-color: #cc0000;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .ncc-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .ncc-table tr:hover {
+    background-color: #ddd;
+  }
+  
+  @media (max-width: 768px) {
+    .ncc-table th, .ncc-table td {
+      padding: 8px 10px;
+    }
+  }
+  

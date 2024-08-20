@@ -1,0 +1,74 @@
+.camps {
+  padding: 20px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.camps h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #d32f2f; /* Base color */
+}
+
+.tables-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #d32f2f;
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Activity table styling */
+.activities-table {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.activity-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsiveness */
+@media (min-width: 768px) {
+  .activities-table {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .activity-row {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+  
