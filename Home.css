@@ -1,0 +1,78 @@
+.home {
+    background-image: url('D:/ncc/website/webncc/src/assets/home-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .home {
+        background-size: 100% auto; /* Adjusts the width to fit, maintains aspect ratio */
+        min-height: auto; /* Allows height to adjust based on content */
+        padding: 60px 10px; /* Reduces padding for better fit */
+    }
+}
+
+.home h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #ffd500;
+}
+
+.home h2 {
+    font-size: 36px;
+    margin-bottom: 0px;
+    color: #fff;
+}
+
+.home p {
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.home button {
+    background-color: #cc0000;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.home button:hover {
+    background-color: #a30000;
+}
+
+@media (max-width: 768px) {
+    .home h1 {
+        font-size: 32px; /* Further reduced for smaller screens */
+    }
+
+    .home h2 {
+        font-size: 24px; /* Further reduced for smaller screens */
+    }
+
+    .home p {
+        font-size: 16px; /* Further reduced for smaller screens */
+    }
+
+    .home button {
+        padding: 10px 20px; /* Further adjusted padding */
+        font-size: 14px; /* Further reduced for smaller screens */
+    }
+}

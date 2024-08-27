@@ -1,0 +1,78 @@
+.photo-gallery {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+  }
+  
+  .photo-container {
+    position: relative;
+  }
+  
+  .gallery-image {
+    width: 100%;
+    border-radius: 10px;
+    transition: opacity 0.8s ease-in-out;
+    opacity: 0;
+    z-index: 1; /* Ensure the image is above the buttons */
+  }
+  
+  .gallery-image.show {
+    opacity: 1;
+  }
+  
+  .description {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #333;
+    font-weight: bold;
+    transition: opacity 0.8s ease-in-out;
+    opacity: 0;
+  }
+  
+  .description.show {
+    opacity: 1;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white; /* white arrow color */
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.6s ease;
+    z-index: 2; /* Ensure arrows are above the image */
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    transform: scale(1.2);
+    color: white; /* Darker shade on hover */
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .prev, .next {
+      font-size: 18px;
+      padding: 10px;
+    }
+  }
+  
+  
